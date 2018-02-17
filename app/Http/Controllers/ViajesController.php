@@ -31,6 +31,7 @@ class ViajesController extends Controller
             'noches' => $request->input('noches'),
             'user_id' => $id,
         ]);
+        dd($viaje);
         return redirect('/index/'. $username);
     }
 
