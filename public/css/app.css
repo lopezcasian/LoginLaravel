@@ -17,7 +17,7 @@ th{
 }
 
 .marginForm{
-	margin: 0 5em;
+	margin: 0 2em;
 }
 
 .marginCol {
@@ -34,9 +34,23 @@ th{
 
 .bgAmarillo {
 	background-color: #ffe599;
+	max-width: 60%;
 }
 
 .btn-primary {
 	background-color: #bf9000;
 	border-color: #bf9000;
+}
+
+.olvContra{
+	color: white;
+}
+
+.btnIngresar{
+	background-color: #085394;
+	border-color: #085394;
+}
+
+.divRegistro{
+	font-size: .7em;
 }

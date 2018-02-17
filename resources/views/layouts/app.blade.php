@@ -19,9 +19,12 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Inicio
+                <a class="navbar-brand mr-4" href="{{ url('/') }}">
+                    <b>Inicio</b>
                 </a>
+                <a class="navbar-brand mr-4" href="#"><b>Servicios</b></a>
+                <a class="navbar-brand mr-4" href="#"><b>Quienes somos</b></a>
+                <a class="navbar-brand" href="#"><b>Blog</b></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
