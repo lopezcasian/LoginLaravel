@@ -36,8 +36,8 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => '2078042295799749',
-        'client_secret' => '042b578471d04a7659fd642c3d83ea97',
+        'client_id' => env('FACEBOOK_ID'),
+        'client_secret' => env('FACEBOOK_SECRET'),
         'redirect' => 'http://pruebaadventures.herokuapp.com/auth/facebook/callback',
     ],
 
