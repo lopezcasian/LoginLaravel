@@ -20,19 +20,18 @@ class ViajesController extends Controller
     	]);
     }
 
-    public function create(CreateViajesRequest $request){
-        $username = Auth::user()->username;
-        $id = Auth::user()->id;
+    public function create(CreateViajesRequest $request, $user_id){
+        $user = User::where('id', $user_id)->first();
+
     	$viaje = Viaje::create([
             'pais' => $request->input('pais'),          
             'estado' => $request->input('estado'),
             'ciudad' => $request->input('ciudad'),
             'dias' => $request->input('dias'),
             'noches' => $request->input('noches'),
-            'user_id' => $id,
+            'user_id' => $user_id,
         ]);
-        dd($viaje);
-        return redirect('/index/'.$username);
+        return redirect('/index/'.$user->username);
     }
 
 }

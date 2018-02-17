@@ -6,7 +6,7 @@
 	<h1> Bienvenido {{$usuario->name}}</h1>
 
 	<h3>Registrar nuevo destino para viajar</h3>
-	<form class="form-inline" action="/destino/create" method="post">
+	<form class="form-inline" action="/index/{{$usuario->id}}/create" method="post">
 		<div class="form-group">
 			
 			{{ csrf_field() }} 

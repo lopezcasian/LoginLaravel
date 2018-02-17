@@ -23,4 +23,4 @@ Route::get('/index/{username}', 'ViajesController@show');					// Ruta que mostra
 
 Route::get('/home', 'HomeController@index')->name('home');					// Ruta que redirecciona a index
 
-Route::post('/destino/create', 'ViajesController@create');
+Route::post('/index/{username}/create', 'ViajesController@create');
