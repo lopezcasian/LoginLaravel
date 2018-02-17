@@ -32,7 +32,7 @@ class ViajesController extends Controller
             'user_id' => $id,
         ]);
         dd($viaje);
-        return redirect('/index/'. $username);
+        return redirect('/index/'.$username);
     }
 
 }
