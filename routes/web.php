@@ -22,3 +22,5 @@ Route::get('/', 'PagesController@show');									// Ruta principal
 Route::get('/index/{username}', 'ViajesController@show');					// Ruta que mostrara los viajes
 
 Route::get('/home', 'HomeController@index')->name('home');					// Ruta que redirecciona a index
+
+Route::post('/destino/create', 'ViajesController@create');

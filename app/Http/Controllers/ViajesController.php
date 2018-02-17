@@ -17,4 +17,18 @@ class ViajesController extends Controller
     		'usuario' => $user,
     	]);
     }
+
+
+    public function create(Request $request){
+
+    	$this->validate($request, [
+    		'pais' => ['required','max:50'],
+    		'estado' => ['required','max:50'],
+    		'ciudad' => ['nullable','max:50'],
+    		'dias' => ['required','numeric','max:2'],
+    		'noches' => ['required','numeric','max:2'],
+    	]);
+    	return 'llego!';
+    }
+
 }
