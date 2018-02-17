@@ -27,8 +27,8 @@ class CreateViajesRequest extends FormRequest
             'pais' => ['required','max:50'],
             'estado' => ['required','max:50'],
             'ciudad' => ['nullable','max:50'],
-            'dias' => ['required','numeric','max:2'],
-            'noches' => ['required','numeric','max:2']
+            'dias' => ['required','numeric','max:20'],
+            'noches' => ['required','numeric','max:20']
         ];
     }
 }
